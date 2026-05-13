@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Safari - Kebun Binatang Modern di Kota Solo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/ICON GAJAH.jpeg">
+  </head>
+<body>
+     <!-- Header / Navbar -->
+     <header class="header">
+         <div class="container">
+              <div class="nav-wrapper">
+                 <div class="logo">
+                     <img class="logo-img" src="img/FOTOGAJAH.png" alt="logo">
+                        <div class="logo-text-wrapper">
+                            <h1>Solo Safari</h1>
+                            <span class="logo-subtitle">Kebun Binatang Modern</span>
+                        </div>
+                  </div>
+                    <nav class="nav">   
+                        <a href="home.html" class="nav-link">Beranda</a>
+                        <a href="tentang.html" class="nav-link">Tentang</a>
+                        <a href="hewan.html" class="nav-link">Hewan</a>
+                        <a href="tiket.html" class="nav-link">Tiket</a>
+                        <a href="kontak.html" class="nav-link">Kontak</a>
+                    </nav>
+                </div>
+            </div>
+     </header>
+
+     <section class="containerutama">
+        <!-- ===== TITLE ===== -->
+        <div class="heri">
+          <div class="kecil">🎟️ Pemesanan Online</div>
+        </div>
+
+        <!-- INFO SAMPING -->
+          <div class="kartu-ringkasan">
+            <div class="ringkasan-header">
+              <h3>📋 Cara Pemesanan</h3>
+              <p>Ikuti langkah berikut ini</p>
+            </div>
+            <div class="ringkasan-isi">
+              <div class="panduan-list">
+                <div class="panduan-item">
+                  <span class="panduan-ikon">1️⃣</span>
+                  <span>Pilih jenis tiket (Regular/Premium) sesuai hari kunjunganmu.</span>
+                </div>
+                <div class="panduan-item">
+                  <span class="panduan-ikon">2️⃣</span>
+                  <span>Pilih tanggal kunjungan dan isi jumlah tiket yang diinginkan.</span>
+                </div>
+                <div class="panduan-item">
+                  <span class="panduan-ikon">3️⃣</span>
+                  <span>Isi data dirimu dengan lengkap dan benar.</span>
+                </div>
+                <div class="panduan-item">
+                  <span class="panduan-ikon">4️⃣</span>
+                  <span>Pilih metode pembayaran yang sesuai.</span>
+                </div>
+                <div class="panduan-item">
+                  <span class="panduan-ikon">5️⃣</span>
+                  <span>Klik tombol <strong style="color:var(--emas);">Kirim via Email</strong> — tim kami akan segera membalas konfirmasi.</span>
+                </div>
+                <div class="panduan-item">
+                  <span class="panduan-ikon">✅</span>
+                  <span>Setelah pembayaran dikonfirmasi, <strong style="color:var(--emas);">tiket dikirim ke Email</strong> kamu!</span>
+                </div>
+              </div>
+              <div class="total-box">
+                <span class="label-total">📞 Butuh bantuan?</span>
+                <span class="angka-total">WA: 0812-3456-789</span>
+              </div>
+            </div>
+          </div>
+
+        <div class="heri">  
+          <h2>Formulir Reservasi Tiket</h2>
+        </div>
+        <!-- ===== KONTEN UTAMA ===== -->
+        <div class="konten">
+          <!-- FORM -->
+          <form action="mailto:tiket@solosafari.id" method="get" enctype="text/plain">
+            <input type="hidden" name="subject" value="Pemesanan Tiket">
+
+            <!-- 1. JENIS TIKET -->
+            <div class="kartu kartu-1">
+              <div class="kartu-header">
+                <div class="ikon-section">🎫</div>
+                <div>
+                  <h3>Pilih Jenis Tiket</h3>
+                  <p>Sesuaikan dengan hari kunjunganmu</p>
+                </div>
+                <div class="nomor-urut">1</div>
+              </div>
+              <div class="kartu-isi">
+                <div class="grid-tiket">
+
+                  <div class="opsi-tiket regular">
+                    <input type="radio" name="jenis_tiket" id="t1" value="Regular Weekday – Anak Rp45.000 / Dewasa Rp55.000" required>
+                    <label class="label-tiket" for="t1">
+                      <div class="badge">Regular</div>
+                      <div class="nama-tiket">Weekday</div>
+                      <div class="hari-tiket">Senin – Jumat</div>
+                      <div class="harga-list">
+                        <div class="baris-harga"><span>Anak-anak</span><strong>Rp 45.000</strong></div>
+                        <div class="baris-harga"><span>Dewasa</span><strong>Rp 55.000</strong></div>
+                      </div>
+                    </label>
+                    <div class="ceklis">✓</div>
+                  </div>
+
+                  <div class="opsi-tiket premium">
+                    <input type="radio" name="jenis_tiket" id="t2" value="Premium Weekday – Anak Rp75.000 / Dewasa Rp90.000">
+                    <label class="label-tiket" for="t2">
+                      <div class="badge">Premium</div>
+                      <div class="nama-tiket">Weekday</div>
+                      <div class="hari-tiket">Senin – Jumat</div>
+                      <div class="harga-list">
+                        <div class="baris-harga"><span>Anak-anak</span><strong>Rp 65.000</strong></div>
+                        <div class="baris-harga"><span>Dewasa</span><strong>Rp 90.000</strong></div>
+                      </div>
+                    </label>
+                    <div class="ceklis">✓</div>
+                  </div>
+
+                  <div class="opsi-tiket regular">
+                    <input type="radio" name="jenis_tiket" id="t3" value="Regular Weekend – Anak Rp60.000 / Dewasa Rp75.000">
+                    <label class="label-tiket" for="t3">
+                      <div class="badge">Regular</div>
+                      <div class="nama-tiket">Weekend</div>
+                      <div class="hari-tiket">Sabtu &amp; Minggu</div>
+                      <div class="harga-list">
+                        <div class="baris-harga"><span>Anak-anak</span><strong>Rp 60.000</strong></div>
+                        <div class="baris-harga"><span>Dewasa</span><strong>Rp 75.000</strong></div>
+                      </div>
+                    </label>
+                    <div class="ceklis">✓</div>
+                  </div>
+
+                  <div class="opsi-tiket premium">
+                    <input type="radio" name="jenis_tiket" id="t4" value="Premium Weekend – Anak Rp80.000 / Dewasa Rp110.000">
+                    <label class="label-tiket" for="t4">
+                      <div class="badge">Premium</div>
+                      <div class="nama-tiket">Weekend</div>
+                      <div class="hari-tiket">Sabtu &amp; Minggu</div>
+                      <div class="harga-list">
+                        <div class="baris-harga"><span>Anak-anak</span><strong>Rp 80.000</strong></div>
+                        <div class="baris-harga"><span>Dewasa</span><strong>Rp 110.000</strong></div>
+                      </div>
+                    </label>
+                    <div class="ceklis">✓</div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. TANGGAL KUNJUNGAN -->
+            <div class="kartu">
+              <div class="kartu-header">
+                <div class="ikon-section">📅</div>
+                <div>
+                  <h3>Tanggal Kunjungan</h3>
+                  <p>Pilih tanggal yang kamu inginkan</p>
+                </div>
+                <div class="nomor-urut">2</div>
+              </div>
+              <div class="kartu-isi">
+                <div class="grup-field">
+                  <label for="tanggal">Tanggal Kunjungan <span class="wajib">*</span></label>
+                  <input type="date" id="tanggal" name="tanggal_kunjungan" required>
+                  <p class="hint">⚠️ Pemesanan minimal 1 hari sebelum kunjungan</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. JUMLAH TIKET -->
+            <div class="kartu">
+              <div class="kartu-header">
+                <div class="ikon-section">🧮</div>
+                <div>
+                  <h3>Jumlah Tiket</h3>
+                  <p>Masukkan jumlah pengunjung</p>
+                </div>
+                <div class="nomor-urut">3</div>
+              </div>
+              <div class="kartu-isi">
+                <div class="tabel-qty">
+
+                  <div class="baris-qty">
+                    <div class="info-qty">
+                      <div class="label-qty">🧑 Dewasa</div>
+                      <div class="ket-qty">Usia di atas 6 tahun</div>
+                    </div>
+                    <div class="input-qty">
+                      <label for="qty_dewasa" style="font-size:20px;padding:0 10px;">−</label>
+                      <input type="number" id="qty_dewasa" name="jumlah_dewasa" value="1" min="0" max="20">
+                      <label for="qty_dewasa" style="font-size:20px;padding:0 10px;">+</label>
+                    </div>
+                  </div>
+
+                  <div class="baris-qty">
+                    <div class="info-qty">
+                      <div class="label-qty">👧 Anak-anak</div>
+                      <div class="ket-qty">Usia 2–6 tahun, tinggi maks. 120cm</div>
+                    </div>
+                    <div class="input-qty">
+                      <label for="qty_anak" style="font-size:20px;padding:0 10px;">−</label>
+                      <input type="number" id="qty_anak" name="jumlah_anak" value="0" min="0" max="20">
+                      <label for="qty_anak" style="font-size:20px;padding:0 10px;">+</label>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="info-box">
+                  <span class="ikon-info">🆓</span>
+                  <p>Anak di bawah 2 tahun atau tinggi &lt; 80cm: <strong>GRATIS</strong>, tidak perlu dipesan.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. DATA PEMESAN -->
+            <div class="kartu">
+              <div class="kartu-header">
+                <div class="ikon-section">👤</div>
+                <div>
+                  <h3>Data Pemesan</h3>
+                  <p>Informasi untuk konfirmasi tiket</p>
+                </div>
+                <div class="nomor-urut">4</div>
+              </div>
+              <div class="kartu-isi">
+
+                <div class="baris-field">
+                  <div class="grup-field">
+                    <label for="nama">Nama Lengkap <span class="wajib">*</span></label>
+                    <input type="text" id="nama" name="nama" placeholder="cth: Budi Santoso" required>
+                  </div>
+                  <div class="grup-field">
+                    <label for="wa">No. WhatsApp <span class="wajib">*</span></label>
+                    <input type="tel" id="wa" name="no_whatsapp" placeholder="cth: 08123456789" required>
+                  </div>
+                </div>
+
+                <div class="baris-field">
+                  <div class="grup-field">
+                    <label for="email">Alamat Email</label>
+                    <input type="email" id="email" name="email" placeholder="email@contoh.com">
+                  </div>
+                  <div class="grup-field">
+                    <label for="kota">Kota Asal</label>
+                    <input type="text" id="kota" name="kota_asal" placeholder="cth: Semarang">
+                  </div>
+                </div>
+
+                <div class="grup-field">
+                  <label for="catatan">Catatan Khusus</label>
+                  <textarea id="catatan" name="catatan" placeholder="Misal: ada anggota keluarga yang membutuhkan kursi roda, alergi, dll."></textarea>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- 5. METODE PEMBAYARAN -->
+            <div class="kartu">
+              <div class="kartu-header">
+                <div class="ikon-section">💳</div>
+                <div>
+                  <h3>Metode Pembayaran</h3>
+                  <p>Pembayaran dikonfirmasi via Email</p>
+                </div>
+                <div class="nomor-urut">5</div>
+              </div>
+              <div class="kartu-isi">
+                <div class="pilihan-bayar">
+
+                  <div class="opsi-bayar">
+                    <input type="radio" name="pembayaran" id="b1" value="Transfer Bank (BCA/BNI/BRI/Mandiri)" required>
+                    <label class="label-bayar" for="b1">
+                      <div class="ikon-bayar">🏦</div>
+                      <div class="teks-bayar">
+                        <div class="judul-bayar">Transfer Bank</div>
+                        <div class="ket-bayar">BCA · BNI · BRI · Mandiri</div>
+                      </div>
+                      <div class="tandabayar"></div>
+                    </label>
+                  </div>
+
+                  <div class="opsi-bayar">
+                    <input type="radio" name="pembayaran" id="b2" value="E-Wallet (GoPay/OVO/Dana/QRIS)">
+                    <label class="label-bayar" for="b2">
+                      <div class="ikon-bayar">📱</div>
+                      <div class="teks-bayar">
+                        <div class="judul-bayar">E-Wallet / QRIS</div>
+                        <div class="ket-bayar">GoPay · OVO · Dana · QRIS</div>
+                      </div>
+                      <div class="tandabayar"></div>
+                    </label>
+                  </div>
+
+                  <div class="opsi-bayar">
+                    <input type="radio" name="pembayaran" id="b3" value="Bayar di Loket">
+                    <label class="label-bayar" for="b3">
+                      <div class="ikon-bayar">🏷️</div>
+                      <div class="teks-bayar">
+                        <div class="judul-bayar">Bayar di Loket</div>
+                        <div class="ket-bayar">Setelah konfirmasi reservasi</div>
+                      </div>
+                      <div class="tandabayar"></div>
+                    </label>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- 6. SYARAT & TOMBOL -->
+            <div class="kartu">
+              <div class="kartu-isi">
+
+                <div class="syarat-wrap" style="margin-bottom: 18px;">
+                  <input type="checkbox" id="syarat" name="setuju_syarat" required>
+                  <label for="syarat">
+                    Saya menyetujui <a href="#">Syarat &amp; Ketentuan</a> dan <a href="#">Kebijakan Privasi</a> Solo Safari. Data yang saya isi adalah benar dan dapat dipertanggungjawabkan.
+                  </label>
+                </div>
+
+                <button type="submit" class="tombol-wa">
+                  <svg class="ikon-wa" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                  </svg>
+                  Kirim Pesanan via Email
+                </button>
+
+              </div>
+            </div>
+        </div>
+     </section>
+</body>
+</html>
